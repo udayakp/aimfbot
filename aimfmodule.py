@@ -23,6 +23,7 @@ def fetch(url,message):
         a = myResponse.raise_for_status()
 
     b = json2html.convert(json = jData)
-    jData
-    b
+    print(json2html.convert(a))
+    print(jData)
+    print(b)
     return b
