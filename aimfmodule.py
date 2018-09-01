@@ -2,6 +2,7 @@ import aimodule
 import requests
 import json2html
 import json
+import json2html.*
 
 def fetch(url,message):
     #render_template('chat.html')
@@ -21,7 +22,7 @@ def fetch(url,message):
     else:
         a = myResponse.raise_for_status()
 
-    b = json2html.convert(a)
+    b = json2html.convert(json = jData)
     jData
     b
     return b
